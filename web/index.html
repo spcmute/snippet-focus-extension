@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SnippetFocus — Gerenciador de snippets, leitor em modo foco e integração com APIs para desenvolvedores." />
+  <title>SnippetFocus — Sua caixa de ferramentas para desenvolvedores</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="11" height="11" rx="3" fill="#4f86f7"/>
+          <rect x="15" y="2" width="11" height="11" rx="3" fill="#4f86f7" opacity=".6"/>
+          <rect x="2" y="15" width="11" height="11" rx="3" fill="#4f86f7" opacity=".6"/>
+          <rect x="15" y="15" width="11" height="11" rx="3" fill="#4f86f7" opacity=".3"/>
+        </svg>
+        SnippetFocus
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Funcionalidades</a></li>
+        <li><a href="#how-it-works">Como funciona</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#install" class="btn btn-primary btn-sm">Instalar grátis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">✦ Extensão Chrome gratuita</div>
+      <h1 class="hero-title">
+        Snippets, foco e automação<br/>
+        <span class="gradient-text">numa só extensão.</span>
+      </h1>
+      <p class="hero-subtitle">
+        SnippetFocus reúne gerenciamento de código, leitura sem distrações e execução direta no console — tudo no seu browser, sem cadastro.
+      </p>
+      <div class="hero-cta">
+        <a href="#install" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Adicionar ao Chrome
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost btn-lg">Ver demonstração</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>12</strong><span>linguagens suportadas</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>3</strong><span>ferramentas num só lugar</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>100%</strong><span>armazenamento local</span></div>
+      </div>
+
+      <!-- HERO IMAGE -->
+      <div class="hero-image-wrap">
+        <div class="image-placeholder hero-img-placeholder">
+          <div class="img-placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <p>Screenshot principal da extensão</p>
+            <span>1280 × 800 px recomendado</span>
+          </div>
+        </div>
+        <div class="hero-image-badge">
+          <span class="pulse-dot"></span>
+          Extensão ativa
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Funcionalidades</div>
+        <h2>Tudo que um dev precisa no browser</h2>
+        <p>Três ferramentas integradas para aumentar sua produtividade sem sair do Chrome.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- Feature 1 -->
+        <div class="feature-card feature-large">
+          <div class="feature-icon">📋</div>
+          <h3>Gerenciador de Snippets</h3>
+          <p>Salve, organize e encontre seus snippets em segundos. Suporte a 12 linguagens com busca por título, conteúdo e tags.</p>
+          <ul class="feature-list">
+            <li>✓ Tags personalizadas e favoritos</li>
+            <li>✓ Copiar com um clique</li>
+            <li>✓ Salvar seleção via clique direito (Alt+S)</li>
+            <li>✓ Export/Import em JSON</li>
+          </ul>
+          <div class="image-placeholder feature-img-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Popup — aba Snippets</p>
+              <span>420 × 580 px</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>Leitor em Modo Foco</h3>
+          <p>Elimina distrações e apresenta o conteúdo da página de forma limpa, com tipografia otimizada para leitura longa.</p>
+          <ul class="feature-list">
+            <li>✓ Temas claro, escuro e sépia</li>
+            <li>✓ Ajuste de fonte e espaçamento</li>
+            <li>✓ Barra de progresso de leitura</li>
+            <li>✓ Ativar com Alt+F</li>
+          </ul>
+          <div class="image-placeholder feature-img-placeholder feature-img-sm">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Modo Foco em ação</p>
+              <span>800 × 500 px</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">▶</div>
+          <h3>Executar no Console</h3>
+          <p>Rode qualquer snippet diretamente na aba ativa com um clique. Veja o resultado inline, sem abrir o DevTools.</p>
+          <ul class="feature-list">
+            <li>✓ Resultado exibido no popup</li>
+            <li>✓ Erros com mensagem clara</li>
+            <li>✓ Executa no contexto da página</li>
+          </ul>
+          <div class="image-placeholder feature-img-placeholder feature-img-sm">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Resultado de execução</p>
+              <span>420 × 300 px</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card feature-wide">
+          <div class="feature-icon">🔗</div>
+          <h3>Integração com APIs</h3>
+          <p>Conecte suas ferramentas favoritas diretamente do popup.</p>
+          <div class="api-cards">
+            <div class="api-card">
+              <span class="api-icon">🐙</span>
+              <strong>GitHub Gists</strong>
+              <span>Exporte snippets como Gist privado com um clique</span>
+            </div>
+            <div class="api-card">
+              <span class="api-icon">✦</span>
+              <strong>OpenAI</strong>
+              <span>Análise automática de código com sugestões de tags e melhorias</span>
+            </div>
+            <div class="api-card">
+              <span class="api-icon">⚡</span>
+              <strong>API Personalizada</strong>
+              <span>Endpoint configurável para qualquer serviço compatível</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Como funciona</div>
+        <h2>Do zero ao snippet em 3 passos</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Instale a extensão</h3>
+            <p>Adicione o SnippetFocus ao Chrome pela Web Store em um clique. Sem cadastro, sem conta — funciona imediatamente.</p>
+          </div>
+          <div class="image-placeholder step-img">
+            <div class="img-placeholder-inner">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Tela de instalação</p>
+              <span>640 × 400 px</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step step-reverse">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Salve código em qualquer página</h3>
+            <p>Selecione texto em qualquer página, clique com o botão direito e escolha <strong>"Salvar como Snippet"</strong> — ou pressione <kbd>Alt+S</kbd>.</p>
+          </div>
+          <div class="image-placeholder step-img">
+            <div class="img-placeholder-inner">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Menu de contexto</p>
+              <span>640 × 400 px</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Use e execute onde quiser</h3>
+            <p>Abra o popup, busque pelo snippet e execute diretamente na aba ativa. O resultado aparece no próprio popup, sem abrir o DevTools.</p>
+          </div>
+          <div class="image-placeholder step-img">
+            <div class="img-placeholder-inner">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Execução + resultado</p>
+              <span>640 × 400 px</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots section" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Screenshots</div>
+        <h2>Veja a extensão em ação</h2>
+        <p>Interface escura, limpa e pensada para desenvolvedores.</p>
+      </div>
+
+      <div class="screenshots-grid">
+        <div class="screenshot-item screenshot-main">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Popup — Lista de snippets</p>
+              <span>420 × 580 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">Lista de Snippets</div>
+        </div>
+
+        <div class="screenshot-item">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Editor de snippet</p>
+              <span>420 × 580 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">Editor de Snippet</div>
+        </div>
+
+        <div class="screenshot-item">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Resultado de execução</p>
+              <span>420 × 580 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">▶ Executar no Console</div>
+        </div>
+
+        <div class="screenshot-item">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Aba API / GitHub Gists</p>
+              <span>420 × 580 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">Integração GitHub Gists</div>
+        </div>
+
+        <div class="screenshot-item screenshot-wide">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Leitor em Modo Foco — sobreposição na página</p>
+              <span>1280 × 720 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">Modo Foco em ação</div>
+        </div>
+
+        <div class="screenshot-item screenshot-wide">
+          <div class="image-placeholder">
+            <div class="img-placeholder-inner">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <p>Página de configurações</p>
+              <span>1280 × 720 px</span>
+            </div>
+          </div>
+          <div class="screenshot-caption">Configurações completas</div>
+        </div>
+      </div>
+
+      <!-- Upload hint -->
+      <div class="upload-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        Substitua os placeholders acima pelas imagens reais da extensão em <code>web/assets/images/</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEYBOARD SHORTCUTS -->
+  <section class="shortcuts section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Atalhos</div>
+        <h2>Feito para quem não larga o teclado</h2>
+      </div>
+      <div class="shortcuts-grid">
+        <div class="shortcut-card">
+          <kbd>Alt</kbd><span>+</span><kbd>S</kbd>
+          <p>Salvar seleção como snippet</p>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Alt</kbd><span>+</span><kbd>F</kbd>
+          <p>Ativar / desativar modo foco</p>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Esc</kbd>
+          <p>Fechar modo foco</p>
+        </div>
+        <div class="shortcut-card">
+          <kbd>A+</kbd><span>/</span><kbd>A−</kbd>
+          <p>Ajustar tamanho da fonte (modo foco)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="languages section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Linguagens</div>
+        <h2>12 linguagens suportadas</h2>
+      </div>
+      <div class="lang-badges">
+        <span class="lang-badge">JavaScript</span>
+        <span class="lang-badge">TypeScript</span>
+        <span class="lang-badge">Python</span>
+        <span class="lang-badge">Rust</span>
+        <span class="lang-badge">Go</span>
+        <span class="lang-badge">CSS</span>
+        <span class="lang-badge">HTML</span>
+        <span class="lang-badge">SQL</span>
+        <span class="lang-badge">Bash</span>
+        <span class="lang-badge">JSON</span>
+        <span class="lang-badge">Markdown</span>
+        <span class="lang-badge">Text</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">FAQ</div>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Meus snippets ficam armazenados onde?</summary>
+          <p>Todos os dados são armazenados localmente no seu browser via <code>chrome.storage.local</code>. Nenhuma informação é enviada para servidores externos. Suas chaves de API (GitHub, OpenAI) também ficam apenas no seu dispositivo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Posso fazer backup dos meus snippets?</summary>
+          <p>Sim! Na página de Configurações (ícone ⚙ no popup) há uma seção "Dados" com opções para exportar todos os snippets como JSON e importar de volta quando precisar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O botão "Executar" funciona em qualquer site?</summary>
+          <p>Funciona na maioria das páginas web. Sites com Content Security Policy (CSP) muito restrita podem bloquear a execução dinâmica de código — nesses casos, a extensão exibe uma mensagem sugerindo colar o código diretamente no DevTools (F12).</p>
+        </details>
+        <details class="faq-item">
+          <summary>Preciso de conta para usar?</summary>
+          <p>Não. O SnippetFocus funciona imediatamente após a instalação, sem cadastro ou login. As integrações com GitHub e OpenAI são opcionais e requerem apenas que você informe sua chave de API nas configurações.</p>
+        </details>
+        <details class="faq-item">
+          <summary>A extensão funciona em outros browsers?</summary>
+          <p>Atualmente o SnippetFocus é otimizado para o Google Chrome e outros browsers baseados em Chromium (Edge, Brave, Opera). Suporte ao Firefox está nos planos.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Como o Modo Foco funciona?</summary>
+          <p>O Modo Foco detecta automaticamente o conteúdo principal da página (elementos <code>article</code>, <code>main</code>, etc.) e exibe apenas esse conteúdo em uma sobreposição de tela cheia com tipografia otimizada. Pressione <kbd>Alt+F</kbd> para ativar ou <kbd>Esc</kbd> para fechar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section section" id="install">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-image-placeholder">
+          <div class="img-placeholder-inner">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <p>Ícone ou mockup da extensão</p>
+            <span>400 × 400 px</span>
+          </div>
+        </div>
+        <div class="cta-content">
+          <h2>Pronto para ser mais produtivo?</h2>
+          <p>Gratuito, sem cadastro e com todos os dados armazenados localmente no seu browser.</p>
+          <a href="#" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            Adicionar ao Chrome — é grátis
+          </a>
+          <p class="cta-sub">Chrome Web Store · Manifest V3 · Código aberto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+          <rect x="2" y="2" width="11" height="11" rx="3" fill="#4f86f7"/>
+          <rect x="15" y="2" width="11" height="11" rx="3" fill="#4f86f7" opacity=".6"/>
+          <rect x="2" y="15" width="11" height="11" rx="3" fill="#4f86f7" opacity=".6"/>
+          <rect x="15" y="15" width="11" height="11" rx="3" fill="#4f86f7" opacity=".3"/>
+        </svg>
+        <span>SnippetFocus</span>
+      </div>
+      <nav class="footer-links">
+        <a href="#features">Funcionalidades</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#faq">FAQ</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">GitHub</a>
+      </nav>
+      <p class="footer-copy">© 2026 SnippetFocus. Feito com ♥ para desenvolvedores.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
